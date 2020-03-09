@@ -1,0 +1,62 @@
+﻿@model FileUpload.Models.FileRecords
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>File Upload</h2>
+
+
+@using (Html.BeginForm("FileUpload", "Upload", FormMethod.Post, new { @enctype = "multipart/form-data", @id = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="col-lg-7">
+            <div class="p-5">
+
+
+                @Html.ValidationSummary(true)
+
+
+                <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <input type="file" name="file" id="file" class="form-control" />
+                    </div>
+                </div>
+                &nbsp;
+                <div class="form-group row">
+                    <div id="submit" class="col-sm-3">
+                        <a href="#" class="action btn btn-primary btn-icon-split">
+                            <span class="text">Upload File</span>
+                        </a>
+                    </div>
+
+                    <div id="spinner" class="col-sm-3" style="display: none">
+                        <button class="btn btn-primary" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Uploading...
+                        </button>
+                    </div>
+
+                    <div id="back" class="col-sm-3">
+                        <a href="@Url.Action("Index","Home")" class="btn btn-success btn-icon-split">
+                            <span class="text">Back</span>
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script src="~/Scripts/spinner.js"></script>
+}
