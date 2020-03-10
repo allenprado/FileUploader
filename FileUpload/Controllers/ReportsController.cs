@@ -21,9 +21,9 @@ namespace FileUpload.Controllers
             return View(db.FileRecordsDB.ToList());
         }
 
-        public List<FileRecords> GetList(DateTime? DateStart = null, DateTime? DateEnd = null)
+        public List<VwFileUploadPerHour> GetList(DateTime? DateStart = null, DateTime? DateEnd = null)
         {
-            return db.FileRecordsDB.Where(x => x.Date >= DateStart && x.Date <= DateEnd).ToList();
+            return db.VwFileUploadPerHourDB.Where(x => x.Date >= DateStart && x.Date <= DateEnd).ToList();
         }
 
         public ActionResult ListPerDate(DateTime? DateStart = null, DateTime? DateEnd = null)

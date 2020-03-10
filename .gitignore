@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/FileUpload/v15/Server/sqlite3/db.lock
+/.vs/FileUpload/v15/Server/sqlite3/storage.ide-wal
+/.vs/FileUpload/v15/Server/sqlite3/storage.ide-shm
+/.vs/FileUpload/v15/Server/sqlite3/storage.ide

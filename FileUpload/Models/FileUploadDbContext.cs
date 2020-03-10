@@ -13,5 +13,6 @@ namespace FileUpload.Models
         }
 
         public DbSet<FileRecords> FileRecordsDB { get; set; }
+        public DbSet<VwFileUploadPerHour> VwFileUploadPerHourDB { get; set; }
     }
 }
