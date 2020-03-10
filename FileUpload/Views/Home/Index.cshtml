@@ -1,31 +1,68 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<style type="text/css">
+    .tab {
+        animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    }
+</style>
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>File Uploader</h1>
+    <p class="lead">Demonstrate your coding ability with this assignment to design and create a web application considered customer facing with regards to UI and performance.</p>
+
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    <div class="col-md-12">
+        <h2>Instructions:</h2>
+
+        Here, the user is the end customer.<br />
+        <p>&nbsp;</p>
+        <div>
+            The web application should allow the user to upload/read price data from a given file (ExportFile.csv) and store it to the SQL server database.<br />
+            The web application should allow the user to select a date range and perform the following operations:<br />
+            Display a given date range (chosen by user) of price values in a suitable chart with,<br />
+        </div>
+        <div>
+            &emsp;&emsp;• - The maximum price<br />
+            &emsp;&emsp;• -	The minimum price<br />
+            &emsp;&emsp;• -	The average price<br />
+            &emsp;&emsp;• -	The most expensive hour (i.e. two consecutive half hour values, combining to make the most expensive hour)<br />
+        </div>
+        <div>
+            Display all the data in a data grid and/or graph.<br />
+            Date and Price are mandatory fields and should be validated with helpful messages.<br />
+            A file of example data is provided called ‘ExportFile.csv’.<br />
+        </div>
+        <p>&nbsp;</p>
+        <div>
+            Preferred Technologies:<br />
+        </div>
+        <div>
+            &emsp;&emsp;  •	MVC, C#<br />
+            &emsp;&emsp;  • HTML5, CSS3, jQuery<br />
+            &emsp;&emsp;  •	Entity Framework, LINQ<br />
+            &emsp;&emsp;  •	SQL Server<br />
+            &emsp;&emsp;  •	Demonstrate test driven project if possible<br />
+        </div>
+        <p>&nbsp;</p>
+        <div>
+            Optional:<br />
+        </div>
+        <div class="tab">
+            &emsp;&emsp; •	Angular<br />
+            &emsp;&emsp;  •	Sass (or Less)<br />
+        </div>
+        <p>&nbsp;</p>
+        <div>
+            Delivery:
+        </div>
+        <div>
+            &emsp;&emsp; •	Send on the solution and DB files to us and any brief explanatory notes you feel an end user might need.
+        </div>
+
+
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+
 </div>
