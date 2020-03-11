@@ -10,6 +10,8 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/toastr")
     @Styles.Render("~/Content/dataTables")
+    @Styles.Render("~/Content/dataPicker")
+    @Styles.Render("~/Content/highcharts")
     @RenderSection("Styles", required: false)
     <!-- Bootstrap core CSS -->
     @*<link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet">*@
@@ -33,7 +35,7 @@
                         <a class="nav-link" href="@Url.Action("GetAll", "Reports")">All Prices</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("ListPerDate", "Reports")">Prices Per Date</a>
+                        <a class="nav-link" href="@Url.Action("ListMax", "Reports")">Prices Max</a>
                     </li>
                 </ul>
             </div>
@@ -67,6 +69,8 @@
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/toastr")
     @Scripts.Render("~/bundles/dataTables")
+    @Scripts.Render("~/bundles/dataPicker")
+    @Scripts.Render("~/bundles/highcharts")
     @RenderSection("scripts", required: false)
     <!-- Bootstrap core JavaScript -->
     @*<script src="~/Scripts/jquery/jquery.slim.min.js"></script>
