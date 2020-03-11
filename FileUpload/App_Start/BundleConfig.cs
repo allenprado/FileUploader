@@ -21,6 +21,12 @@ namespace FileUpload
                       "~/Content/datatables/dataTables.bootstrap4.min.css",
                       "~/Content/datatables/jquery.dataTables.min.css"));
 
+            bundles.Add(new StyleBundle("~/Content/dataPicker").Include(
+                      "~/Content/datapicker/datepicker3.css"));
+
+            bundles.Add(new StyleBundle("~/Content/highcharts").Include(
+                      "~/Content/highcharts/highcharts.css"));
+
 
             //==================== SCRIPTS =================================
 
@@ -41,6 +47,13 @@ namespace FileUpload
                        "~/scripts/datatables/dataTables.bootstrap4.js",
                        "~/scripts/datatables/jquery.dataTables.js",
                        "~/scripts/datatables/datatables-demo.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/dataPicker").Include(
+                      "~/Scripts/datapicker/bootstrap-datepicker.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/highcharts").Include(
+                      "~/Scripts/highcharts/highcharts.js",
+                      "~/Scripts/highcharts/modules/exporting.js"));
         }
     }
 }
