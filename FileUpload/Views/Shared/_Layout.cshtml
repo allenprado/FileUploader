@@ -9,9 +9,7 @@
     <title>@ViewBag.Title - File Uploader</title>
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/toastr")
-    @Styles.Render("~/Content/dataTables")
     @Styles.Render("~/Content/dataPicker")
-    @Styles.Render("~/Content/highcharts")
     @RenderSection("Styles", required: false)
     <!-- Bootstrap core CSS -->
     @*<link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet">*@
@@ -27,7 +25,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Index", "Upload")">Upload File</a>
                     </li>
@@ -35,7 +33,10 @@
                         <a class="nav-link" href="@Url.Action("GetAll", "Reports")">All Prices</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("ListMax", "Reports")">Prices Max</a>
+                        <a class="nav-link" href="@Url.Action("ListMax", "Reports")">Prices Max/Min/Avg</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("ListExp", "Reports")">Hour Most Expensive</a>
                     </li>
                 </ul>
             </div>
@@ -47,7 +48,7 @@
             <div class="col-lg-12 text-center">
                 <h1 class="mt-5">GridBeyond Web Developer Assignment</h1>
                 <p class="lead">File Uploader system.</p>
-               
+
             </div>
         </div>
     </div>
@@ -65,12 +66,10 @@
     <input type="hidden" id="warning" value="@TempData["warning"]" />
     <input type="hidden" id="error" value="@TempData["error"]" />
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/toastr")
-    @Scripts.Render("~/bundles/dataTables")
-    @Scripts.Render("~/bundles/dataPicker")
-    @Scripts.Render("~/bundles/highcharts")
+    @Scripts.Render("~/scripts/jquery")
+    @Scripts.Render("~/scripts/bootstrap")
+    @Scripts.Render("~/scripts/toastr")
+    @Scripts.Render("~/scripts/dataPicker")
     @RenderSection("scripts", required: false)
     <!-- Bootstrap core JavaScript -->
     @*<script src="~/Scripts/jquery/jquery.slim.min.js"></script>

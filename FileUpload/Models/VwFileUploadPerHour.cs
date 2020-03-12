@@ -9,9 +9,12 @@ namespace FileUpload.Models
     public class VwFileUploadPerHour
     {
         [Key]
-        public int Id { get; set; }
+        [Display(Name = "Date")]
         public DateTime Date { get; set; }
+        [Display(Name = "Date")]
+        public string DateStr { get; set; }
+        [Display(Name = "Most Expensive Hour")]
         public decimal MaxPrice { get; set; }
-        
+
     }
 }

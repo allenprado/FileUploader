@@ -155,9 +155,6 @@
     <Content Include="Content\bootstrap\bootstrap.css" />
     <Content Include="Content\bootstrap\bootstrap.min.css" />
     <Content Include="Content\datapicker\datepicker3.css" />
-    <Content Include="Content\datatables\dataTables.bootstrap4.css" />
-    <Content Include="Content\datatables\dataTables.bootstrap4.min.css" />
-    <Content Include="Content\datatables\jquery.dataTables.min.css" />
     <Content Include="Content\highcharts\highcharts.css" />
     <Content Include="Content\toastr\toastr.css" />
     <Content Include="Content\toastr\toastr.min.css" />
@@ -166,18 +163,15 @@
     <Content Include="Global.asax" />
     <Content Include="Content\toastr\toastr.less" />
     <Content Include="Content\toastr\toastr.scss" />
+    <Content Include="Scripts\app\ListExp.js" />
     <Content Include="Scripts\app\ListMax.js" />
+    <Content Include="Scripts\app\upload.js" />
     <Content Include="Scripts\bootstrap\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap\bootstrap.js" />
     <Content Include="Scripts\bootstrap\bootstrap.min.js" />
     <Content Include="Scripts\datapicker\bootstrap-datepicker.js" />
     <Content Include="Scripts\datapicker\daterangepicker.js" />
-    <Content Include="Scripts\datatables\datatables-demo.js" />
-    <Content Include="Scripts\datatables\dataTables.bootstrap4.js" />
-    <Content Include="Scripts\datatables\dataTables.bootstrap4.min.js" />
-    <Content Include="Scripts\datatables\jquery.dataTables.js" />
-    <Content Include="Scripts\datatables\jquery.dataTables.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -451,6 +445,8 @@
     <Content Include="Scripts\jquery\jquery.slim.min.map" />
     <Content Include="Views\Reports\_PartialListMax.cshtml" />
     <Content Include="Views\Reports\ListMax.cshtml" />
+    <Content Include="Views\Reports\ListExp.cshtml" />
+    <Content Include="Views\Reports\_PartialListExp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

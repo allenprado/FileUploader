@@ -1,7 +1,5 @@
-﻿@model IEnumerable<FileUpload.Models.VwFileUpload>
-
+﻿@model IEnumerable<FileUpload.Models.VwFileUploadPerHour>
 @{
-
     Layout = null;
 }
 
@@ -33,12 +31,7 @@
                             <th class="text-center">
                                 @Html.DisplayNameFor(model => model.MaxPrice)
                             </th>
-                            <th class="text-center">
-                                @Html.DisplayNameFor(model => model.MinPrice)
-                            </th>
-                            <th class="text-center">
-                                @Html.DisplayNameFor(model => model.AvgPrice)
-                            </th>
+                            
 
                         </tr>
                     </thead>
@@ -52,13 +45,6 @@
                                 <td class="text-center">
                                     € @Html.DisplayFor(modelItem => item.MaxPrice)
                                 </td>
-                                <td class="text-center">
-                                    € @Html.DisplayFor(modelItem => item.MinPrice)
-                                </td>
-                                <td class="text-center">
-                                    € @Html.DisplayFor(modelItem => item.AvgPrice)
-                                </td>
-
                             </tr>
                         }
                     </tbody>

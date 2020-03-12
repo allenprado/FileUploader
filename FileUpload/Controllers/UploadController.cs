@@ -100,5 +100,11 @@ namespace FileUpload.Controllers
 
             return View("Index");
         }
+
+        public ActionResult Error()
+        {
+            TempData["error"] = "It should have a CSV File";
+            return RedirectToAction("Index");
+        }
     }
 }

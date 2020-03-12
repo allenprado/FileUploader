@@ -25,7 +25,7 @@
         e.preventDefault();
         $.ajax({
             type: "Post",
-            url: "/Reports/ListMax",
+            url: "/Reports/ListExp",
             data: { DateStart: $("#mydate").val(), DateEnd: $("#mydate2").val() },
             success: function (result) {
                 $(".list-data").html(result);
@@ -43,7 +43,7 @@ function BindGraphycs() {
     //Get by API date for bind graph
     $.ajax({
         type: "Post",
-        url: "/Reports/BindGraphycsMax",
+        url: "/Reports/BindGraphycsExp",
         dataType: "json",
         data: { DateStart: $("#mydate").val(), DateEnd: $("#mydate2").val() },
         success: function (data) {
@@ -51,16 +51,12 @@ function BindGraphycs() {
             var Dates = [];
             var MaxPrice = [];
             var MinPrice = [];
-            var AvgPrice = [];
 
             //Feed the arrays with date from API
             $.each(data, function (index, obj) {
 
                 Dates.push(obj.DateStr);
                 MaxPrice.push(obj.MaxPrice);
-                MinPrice.push(obj.MinPrice);
-                AvgPrice.push(obj.AvgPrice);
-
             });
 
             //Bind the graphic
@@ -69,7 +65,7 @@ function BindGraphycs() {
                     type: 'column'
                 },
                 title: {
-                    text: 'Maximum, Minimum and Average Prices'
+                    text: 'Most Expensive Hour'
                 },
                 subtitle: {
                     text: 'Source: GridBeyond Web Developer Assignment'
@@ -99,16 +95,8 @@ function BindGraphycs() {
                     }
                 },
                 series: [{
-                    name: 'Maximum',
+                    name: 'Most Expensive Hour',
                     data: MaxPrice
-
-                }, {
-                    name: 'Minimum',
-                    data: MinPrice
-
-                }, {
-                    name: 'Average',
-                    data: AvgPrice
 
                 }]
             });

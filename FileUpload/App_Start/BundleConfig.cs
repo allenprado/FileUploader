@@ -17,10 +17,6 @@ namespace FileUpload
             bundles.Add(new StyleBundle("~/Content/toastr").Include(
                       "~/Content/toastr/toastr.css"));
 
-            bundles.Add(new StyleBundle("~/Content/dataTables").Include(
-                      "~/Content/datatables/dataTables.bootstrap4.min.css",
-                      "~/Content/datatables/jquery.dataTables.min.css"));
-
             bundles.Add(new StyleBundle("~/Content/dataPicker").Include(
                       "~/Content/datapicker/datepicker3.css"));
 
@@ -30,28 +26,23 @@ namespace FileUpload
 
             //==================== SCRIPTS =================================
 
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+            bundles.Add(new ScriptBundle("~/scripts/jquery").Include(
                         "~/Scripts/jquery/jquery.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
+            bundles.Add(new ScriptBundle("~/scripts/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+            bundles.Add(new ScriptBundle("~/scripts/bootstrap").Include(
                       "~/Scripts/bootstrap/bootstrap.bundle.min.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/toastr").Include(
+            bundles.Add(new ScriptBundle("~/scripts/toastr").Include(
                         "~/scripts/toastr/toastr.js",
                         "~/scripts/toastr/toastrImp.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/dataTables").Include(
-                       "~/scripts/datatables/dataTables.bootstrap4.js",
-                       "~/scripts/datatables/jquery.dataTables.js",
-                       "~/scripts/datatables/datatables-demo.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/dataPicker").Include(
+            bundles.Add(new ScriptBundle("~/scripts/dataPicker").Include(
                       "~/Scripts/datapicker/bootstrap-datepicker.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/highcharts").Include(
+            bundles.Add(new ScriptBundle("~/scripts/highcharts").Include(
                       "~/Scripts/highcharts/highcharts.js",
                       "~/Scripts/highcharts/modules/exporting.js"));
         }

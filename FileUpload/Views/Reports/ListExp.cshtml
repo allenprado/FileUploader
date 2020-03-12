@@ -1,10 +1,9 @@
 ﻿@model IEnumerable<FileUpload.Models.VwFileUpload>
-@{
 
-    ViewBag.Title = "ListMax";
+@{
+    ViewBag.Title = "ListExp";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="row">
@@ -32,7 +31,7 @@
         <p>&nbsp;</p>
         <div class="ibox float-e-margins divContentRel">
             <div class="ibox-title">
-                <h5>List per Maximum, Minimum and Average Price</h5>
+                <h5>List per Most Expensive Hours</h5>
             </div>
             <p>&nbsp;</p>
             <div class="ibox-content">
@@ -51,7 +50,6 @@
 </div>
 
 @section Scripts {
-    <script src="~/Scripts/app/ListMax.js"></script>
+    <script src="~/Scripts/app/ListExp.js"></script>
 
 }
-
